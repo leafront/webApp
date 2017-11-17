@@ -47,6 +47,8 @@
 				this.$router.push(url)
 
 				this.isOpenMenu = false;
+				
+				window.scrollTo(0,0);
 
 				this.$emit('closeMenu',this.isOpenMenu);
 
