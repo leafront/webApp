@@ -10,6 +10,8 @@ const projectCase = r => require.ensure([], () => r(require('../view/project/cas
 
 const projectTeam = r => require.ensure([], () => r(require('../view/project/team')), 'projectTeam')
 
+const error = r => require.ensure([], () => r(require('../view/error')), 'error')
+
 const router = [{
   path: '/',
   name: 'home',
@@ -34,6 +36,10 @@ const router = [{
 	path: '/project/team',
 	name: 'projectTeam',
 	component: projectTeam
+},{
+  path: '*',
+	name: 'error',
+	component: error
 }]
 
 export default router
