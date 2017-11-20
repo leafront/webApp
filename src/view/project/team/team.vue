@@ -1,22 +1,24 @@
 <template>
-  <div class = "scroll-view">
-    <div class = "project-page">
-      <div class="cate-nav">
-        <span>全部</span>
-      </div>
-           <ul class="team-list">
-
-       <li v-for="item in list">
-          <img :src="item.img"/>
-           <div class="team-list-desc">
-               <h5>{{item.name}}</h5>
-               <span>{{item.title}}</span>
-               <p>{{item.content}}</p>
-           </div>
-       </li>
-      </ul>
-    </div>
-  </div>
+	<div class="scroll-view-wrapper">
+	  <div class = "scroll-view">
+	    <div class = "project-page">
+	      <div class="cate-nav">
+	        <span>全部</span>
+	      </div>
+	           <ul class="team-list">
+	
+	       <li v-for="item in list">
+	          <img :src="item.img"/>
+	           <div class="team-list-desc">
+	               <h5>{{item.name}}</h5>
+	               <span>{{item.title}}</span>
+	               <p>{{item.content}}</p>
+	           </div>
+	       </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
 </template>
 
 <script>

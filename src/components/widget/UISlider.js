@@ -9,7 +9,7 @@ function UISlider(options) {
 		// 初次显示第几张
 		index: 1,
 		// 阻止页面上下滑动
-		preventDefault: true
+		preventDefault: false
 	}
 
 	Object.assign(this.options,options);
@@ -49,7 +49,6 @@ UISlider.prototype = {
 
 		var differX = this.endX - this.startX;
 		var differY = this.endY - this.startY;
-
 		if (!this.isCheck) {
 			if (Math.abs(differY) > Math.abs(differX)) {
 				this.isValid = false;
@@ -63,7 +62,6 @@ UISlider.prototype = {
 	},
 	touchend (e) {
 		if (!this.isValid) return;
-		var differX = this.endX - this.startX;
 		this._end();
 	},
 	init (options) {

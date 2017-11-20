@@ -1,13 +1,15 @@
 <template>
-	<div class="scroll-view">
-		<div class = "business-page">
-			<ul class="business-page-list">
-				<li v-for="item in list">
-					<img :src="item.img"/>
-					<span>{{item.title}}</span>
-					<p>{{item.content}}</p>
-				</li>
-			</ul>
+	<div class="scroll-view-wrapper">
+		<div class="scroll-view">
+			<div class = "business-page">
+				<ul class="business-page-list">
+					<li v-for="item in list">
+						<img :src="item.img"/>
+						<span>{{item.title}}</span>
+						<p>{{item.content}}</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-	  <header id="header">
+	  <header class="header">
 		  <div class="open-menu fl" :class="{'open-btn':isMenu}" @click="openMenu">
         <span class="open-top-bar"></span>
 			  <span class="open-bot-bar"></span>

@@ -1,11 +1,13 @@
 <template>
-	<div class="scroll-view">
-		<Banner></Banner>
-		<Case></Case>
-		<Contact></Contact>
-		<News></News>
-		<Friendship></Friendship>
-		<app-footer></app-footer>
+	<div class="scroll-view-wrapper">
+		<div class="scroll-view">
+			<Banner></Banner>
+			<Case></Case>
+			<Contact></Contact>
+			<News></News>
+			<Friendship></Friendship>
+			<app-footer></app-footer>
+		</div>
 	</div>
 </template>
 

@@ -18,7 +18,7 @@ Vue.use(Router)
 Vue.config.productionTip = false
 
 const router = new Router({
-  mode: 'history',
+  mode: 'hash',
   routes
 })
 

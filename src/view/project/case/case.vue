@@ -1,15 +1,17 @@
 <template>
-  <div class = "scroll-view">
-    <div class = "project-page">
-      <div class="cate-nav">
-              <span>全部</span><i class="btn-down fa fa-angle-down transform"></i>
-          </div>
-          <div class="project-case">
-           <ul class="home-case-list">
-               <li v-for="item in list"><a href="#"><img :src="item.img" alt=""/></a></li>
-           </ul>
-      </div>
-    </div>
+	<div class="scroll-view-wrapper">
+	  <div class = "scroll-view">
+	    <div class = "project-page">
+	      <div class="cate-nav">
+	              <span>全部</span><i class="btn-down fa fa-angle-down transform"></i>
+	          </div>
+	          <div class="project-case">
+	           <ul class="home-case-list">
+	               <li v-for="item in list"><a href="#"><img :src="item.img" alt=""/></a></li>
+	           </ul>
+	      </div>
+	    </div>
+	  </div>
   </div>
 </template>
 <script>
