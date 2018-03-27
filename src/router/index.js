@@ -10,6 +10,8 @@ const projectCase = r => require.ensure([], () => r(require('../view/project/cas
 
 const projectTeam = r => require.ensure([], () => r(require('../view/project/team')), 'projectTeam')
 
+const picker = r => require.ensure([], () => r(require('../view/test/picker')), 'picker')
+
 const error = r => require.ensure([], () => r(require('../view/error')), 'error')
 
 const router = [{
@@ -36,6 +38,10 @@ const router = [{
 	path: '/project/team',
 	name: 'projectTeam',
 	component: projectTeam
+},{
+	path: '/test/picker',
+	name: 'picker',
+	component: picker
 },{
   path: '*',
 	name: 'error',
